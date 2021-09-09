@@ -20,8 +20,14 @@ struct ContentView: View {
             Divider()
             HStack {
                 Button("Download Model Update", action: viewModel.downloadModelUpdate)
-                if viewModel.isUpdatedModelAvailable {
+                if viewModel.updatedModelPath != nil {
                     Toggle("Use Updated Model", isOn: $viewModel.useUpdatedModel)
+                }
+            }
+            if let path = viewModel.updatedModelPath {
+                Text("Downloaded to: \(path)").fixedSize()
+                Button("Open in Finder") {
+                    NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: ModelDownloader.documentsDirectory.path)
                 }
             }
         }

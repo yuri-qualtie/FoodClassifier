@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		DA79EA2226EA396B007585E8 /* ModelDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA79EA2126EA396B007585E8 /* ModelDownloader.swift */; };
+		DA79EA2526EA4014007585E8 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = DA79EA2426EA4014007585E8 /* ZIPFoundation */; };
 		DA9202F426EA2730004A751C /* FoodClassifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9202F326EA2730004A751C /* FoodClassifierApp.swift */; };
 		DA9202F626EA2731004A751C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9202F526EA2730004A751C /* ContentView.swift */; };
 		DA9202F826EA2732004A751C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9202F726EA2732004A751C /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA79EA2526EA4014007585E8 /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,9 @@
 			dependencies = (
 			);
 			name = FoodClassifier;
+			packageProductDependencies = (
+				DA79EA2426EA4014007585E8 /* ZIPFoundation */,
+			);
 			productName = FoodClassifier;
 			productReference = DA9202F026EA2730004A751C /* FoodClassifier.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +137,9 @@
 				Base,
 			);
 			mainGroup = DA9202E726EA2730004A751C;
+			packageReferences = (
+				DA79EA2326EA4014007585E8 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
 			productRefGroup = DA9202F126EA2730004A751C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -353,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA79EA2326EA4014007585E8 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.12;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA79EA2426EA4014007585E8 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA79EA2326EA4014007585E8 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA9202E826EA2730004A751C /* Project object */;
 }

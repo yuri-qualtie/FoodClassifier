@@ -3,8 +3,8 @@ import AppKit
 class FoodViewModel: ObservableObject {
     let images = ["1", "2", "3", "4"]
     
-    @Published var isUpdatedModelAvailable: Bool = false
     @Published var useUpdatedModel: Bool = false
+    @Published var updatedModelPath: String?
     
     private let classifier = Classifier()
     private let downloader = ModelDownloader()
@@ -18,8 +18,10 @@ class FoodViewModel: ObservableObject {
     }
     
     func downloadModelUpdate() {
-        downloader.download()
+        downloader.download { [unowned self] path in
+            DispatchQueue.main.async {
+                updatedModelPath = path
+            }
+        }
     }
 }
-
-//https://github.com/yuri-qualtie/FoodClassifier/blob/main/Models/FoodV2.zip?raw=true
