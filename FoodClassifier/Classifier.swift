@@ -2,9 +2,8 @@ import CoreML
 import AppKit
 
 class Classifier {
-    let model = FoodV1()
-
-    func classify(image: NSImage) -> String {
+    func classify(image: NSImage, modelURL: URL) -> String {
+        let model = try! FoodV1(contentsOf: modelURL)
         let prediction = try! model.prediction(image: image.pixelBuffer()!)
         
         return prediction.classLabel

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA79EA2226EA396B007585E8 /* ModelDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA79EA2126EA396B007585E8 /* ModelDownloader.swift */; };
 		DA9202F426EA2730004A751C /* FoodClassifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9202F326EA2730004A751C /* FoodClassifierApp.swift */; };
 		DA9202F626EA2731004A751C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9202F526EA2730004A751C /* ContentView.swift */; };
 		DA9202F826EA2732004A751C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9202F726EA2732004A751C /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA79EA2126EA396B007585E8 /* ModelDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDownloader.swift; sourceTree = "<group>"; };
 		DA9202F026EA2730004A751C /* FoodClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9202F326EA2730004A751C /* FoodClassifierApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodClassifierApp.swift; sourceTree = "<group>"; };
 		DA9202F526EA2730004A751C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				DA92030726EA2B8A004A751C /* Classifier.swift */,
 				DA92030926EA2E09004A751C /* NSImage+pixelBuffer.swift */,
 				DA92030B26EA2EB7004A751C /* FoodViewModel.swift */,
+				DA79EA2126EA396B007585E8 /* ModelDownloader.swift */,
 			);
 			path = FoodClassifier;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA79EA2226EA396B007585E8 /* ModelDownloader.swift in Sources */,
 				DA92030826EA2B8A004A751C /* Classifier.swift in Sources */,
 				DA9202F626EA2731004A751C /* ContentView.swift in Sources */,
 				DA92030426EA2756004A751C /* FoodV1.mlmodel in Sources */,

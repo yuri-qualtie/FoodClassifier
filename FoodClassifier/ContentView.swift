@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var viewModel = FoodViewModel()
+    @StateObject var viewModel = FoodViewModel()
     
     var body: some View {
-        HStack {
-            ForEach(viewModel.images, id:\.self) {
-                FoodItemView(image: $0, viewModel: viewModel)
+        VStack {
+            HStack {
+                ForEach(viewModel.images, id:\.self) {
+                    FoodItemView(image: $0, viewModel: viewModel)
+                }
+            }
+            Divider()
+            HStack {
+                Button("Download Model Update", action: viewModel.downloadModelUpdate)
+                if viewModel.isUpdatedModelAvailable {
+                    Toggle("Use Updated Model", isOn: $viewModel.useUpdatedModel)
+                }
             }
         }
         .padding()
