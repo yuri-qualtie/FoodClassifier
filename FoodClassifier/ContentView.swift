@@ -25,9 +25,11 @@ struct ContentView: View {
                 }
             }
             if let path = viewModel.updatedModelPath {
-                Text("Downloaded to: \(path)").fixedSize()
-                Button("Open in Finder") {
-                    NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: ModelDownloader.documentsDirectory.path)
+                HStack {
+                    Text("Downloaded to: \(path)").fixedSize()
+                    Button("Open in Finder") {
+                        NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: ModelDownloader.documentsDirectory.path)
+                    }
                 }
             }
         }
