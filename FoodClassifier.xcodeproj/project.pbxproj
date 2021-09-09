@@ -13,6 +13,9 @@
 		DA9202FB26EA2733004A751C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9202FA26EA2733004A751C /* Preview Assets.xcassets */; };
 		DA92030426EA2756004A751C /* FoodV1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = DA92030326EA2756004A751C /* FoodV1.mlmodel */; };
 		DA92030626EA2A56004A751C /* FoodItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92030526EA2A56004A751C /* FoodItemView.swift */; };
+		DA92030826EA2B8A004A751C /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92030726EA2B8A004A751C /* Classifier.swift */; };
+		DA92030A26EA2E09004A751C /* NSImage+pixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92030926EA2E09004A751C /* NSImage+pixelBuffer.swift */; };
+		DA92030C26EA2EB7004A751C /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92030B26EA2EB7004A751C /* FoodViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		DA9202FD26EA2733004A751C /* FoodClassifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodClassifier.entitlements; sourceTree = "<group>"; };
 		DA92030326EA2756004A751C /* FoodV1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FoodV1.mlmodel; sourceTree = "<group>"; };
 		DA92030526EA2A56004A751C /* FoodItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemView.swift; sourceTree = "<group>"; };
+		DA92030726EA2B8A004A751C /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		DA92030926EA2E09004A751C /* NSImage+pixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+pixelBuffer.swift"; sourceTree = "<group>"; };
+		DA92030B26EA2EB7004A751C /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,9 @@
 				DA9202FD26EA2733004A751C /* FoodClassifier.entitlements */,
 				DA9202F926EA2733004A751C /* Preview Content */,
 				DA92030526EA2A56004A751C /* FoodItemView.swift */,
+				DA92030726EA2B8A004A751C /* Classifier.swift */,
+				DA92030926EA2E09004A751C /* NSImage+pixelBuffer.swift */,
+				DA92030B26EA2EB7004A751C /* FoodViewModel.swift */,
 			);
 			path = FoodClassifier;
 			sourceTree = "<group>";
@@ -146,10 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA92030826EA2B8A004A751C /* Classifier.swift in Sources */,
 				DA9202F626EA2731004A751C /* ContentView.swift in Sources */,
 				DA92030426EA2756004A751C /* FoodV1.mlmodel in Sources */,
 				DA9202F426EA2730004A751C /* FoodClassifierApp.swift in Sources */,
 				DA92030626EA2A56004A751C /* FoodItemView.swift in Sources */,
+				DA92030A26EA2E09004A751C /* NSImage+pixelBuffer.swift in Sources */,
+				DA92030C26EA2EB7004A751C /* FoodViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

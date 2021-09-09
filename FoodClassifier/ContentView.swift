@@ -8,20 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    let images = ["1", "2", "3", "4"]
+    @State var viewModel = FoodViewModel()
     
     var body: some View {
         HStack {
-            ForEach(images, id:\.self) {
-                FoodItemView(image: $0)
+            ForEach(viewModel.images, id:\.self) {
+                FoodItemView(image: $0, viewModel: viewModel)
             }
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
