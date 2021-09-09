@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    let images = ["1", "2", "3", "4"]
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        HStack {
+            ForEach(images, id:\.self) {
+                FoodItemView(image: $0)
+            }
+        }
+        .padding()
     }
 }
 
