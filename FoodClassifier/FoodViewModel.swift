@@ -18,7 +18,8 @@ class FoodViewModel: ObservableObject {
     }
     
     func downloadModelUpdate() {
-        print(NSTemporaryDirectory())
-        isUpdatedModelAvailable = true
+        downloader.download()
     }
 }
+
+//https://github.com/yuri-qualtie/FoodClassifier/blob/main/Models/FoodV2.zip?raw=true
